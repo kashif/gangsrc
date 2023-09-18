@@ -1,0 +1,75 @@
+/* GANG Software
+ * WIDGET/app/ui/Ui.H
+ * Copyright (C) 2002 Nicholas Schmitt <nick@gang.umass.edu>
+ * Wed Sep 18 16:39:46 2002
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ * 
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ */
+
+#ifndef app_ui_Ui_INCLUDED
+#define app_ui_Ui_INCLUDED
+
+#include "About.H"
+#include "Commands.H"
+#include "Message.H"
+#include "Shortcut.H"
+
+namespace app {
+namespace ui {
+
+class Ui
+  :
+    virtual protected About,
+    virtual protected Commands,
+    virtual protected Message,
+    virtual protected Shortcut
+{
+
+public:
+  // constructor
+  Ui();
+
+  // destructor
+  virtual ~Ui();
+
+  void hide_all();
+  void enable_tooltips( bool state );
+
+  bool command(
+    base::String const &command,
+    base::String const &argument,
+    base::String &response );
+
+protected:
+
+private:
+
+  About *_about() { return this; }
+  Commands *_commands() { return this; }
+  Message *_message() { return this; }
+  Shortcut *_shortcut() { return this; }
+
+  // disabledcopy constructor
+  Ui( Ui const & );
+  // disabledassignment operator
+  Ui &operator=( Ui const & );
+
+};
+
+} // namespace ui
+} // namespace app
+
+#endif // app_ui_Ui_INCLUDED

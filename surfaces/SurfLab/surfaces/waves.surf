@@ -1,0 +1,12 @@
+SurfLab 1.0
+
+name Waves
+
+domain rectangular -2pi-2pi i; 2pi-2pi i; 20; -2pi+2pi i; 20;
+
+x1 u
+x2 v
+x3 cos[u]cos[v]
+
+var1 u
+var2 v

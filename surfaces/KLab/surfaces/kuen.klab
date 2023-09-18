@@ -1,0 +1,21 @@
+KLab 1.0
+
+name Kuen's Surface
+
+potential_x {{(2i)/t^2-2i,1/t^3+4i/t-1t},{-1/t^3+(4i)/t+1*t,2i-(2i)/t^2}}
+
+potential_y {{2*I - 2*I*t^2, 1/t + 4*I*t - 1 t^3}, 
+ {-1/t + 4*I*t + 1 t^3, -2*I + 2*I*t^2}}
+
+domain rectangular -3i; -3; 40; 3; 40;
+
+zstart 0
+lambda 1
+polynomial_length 50
+
+initial_x {{1,0},{0,1}}
+
+initial_y {{1,0},{0,1}}
+
+initial_integrator_count 100
+integrator_count 1

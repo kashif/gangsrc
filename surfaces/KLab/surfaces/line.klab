@@ -1,0 +1,20 @@
+KLab 1.0
+
+name Line
+
+potential_x {{0, 0.25/t + 0.25 t}, {-0.25/t -0.25 t, 0}}
+
+potential_y {{0, 0.25/t + 0.25 t}, {-0.25/t -0.25 t, 0}}
+
+domain rectangular -pi-12i; pi-12i; 15; -pi+10i; 64;
+
+zstart 0
+lambda 1
+polynomial_length 20
+
+initial_x {{1,0},{0,1}}
+
+initial_y {{1,0},{0,1}}
+
+initial_integrator_count 100
+integrator_count 1

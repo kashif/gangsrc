@@ -1,0 +1,25 @@
+CMCLab 1.0
+
+name Delaunay Unduoid in H^3
+domain rectangular -19; 19; 120; -19+2 pi i; 20;
+potential_variable z
+potential {{
+  0,
+  1/(2Sqrt[34])/t + Sqrt[2/17] },{
+  Sqrt[2/17] + 1/(2Sqrt[34]) t,
+  0
+}}
+
+zstart 0
+lambda H3 0.25
+normalshift 1
+mean_curvature 1
+polynomial_length 10
+basis_length 20
+iwasawa_method qr
+birkhoff false
+one_column false
+initial_integrator_count 100
+integrator_count 1
+xstart {{1,0},{0,1}}
+

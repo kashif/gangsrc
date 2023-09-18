@@ -1,0 +1,16 @@
+CMCLab 1.0
+
+name Cylinder Tangent to Plane
+zstart 0
+domain rectangular -0.1i; -0.1i+2pi; 200; 0.68i; 80
+integrator_count 1
+initial_integrator_count 100
+polynomial_length 30
+basis_length 60
+potential
+{{
+  0,
+  (-exp[-i z]-exp[-4i z])/t + (exp[-i z]+exp[-4i z]) },{
+  (-exp[i z]-exp[4i z]) + (exp[i z]+exp[4i z]) t,
+  0
+}}

@@ -1,0 +1,12 @@
+CMCLab 1.0
+
+name Delaunay Nodoid
+potential
+{{
+  0,
+  0.6/z/t - 0.1/z },{
+  -0.1/z + + 0.6/z t,
+  0
+}}
+domain polar_exp 0; 1000; 0.001; 30; 0; 2pi; 30
+zstart 1

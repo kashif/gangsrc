@@ -1,0 +1,40 @@
+MinLab 1.0
+
+name 4-noid
+mode weierstrass
+spinor1 
+spinor2 
+weierstrass_g z^3
+weierstrass_f 1/(z^4-1)^2
+Xstart1 0
+Xstart2 0
+Xstart3 0
+
+domain triangulated
+boundary
+Loop
+circle 0; 50; 0; 2Pi; 3;
+Loop
+circle 1; 0.05; 0; -2Pi; 40;
+Loop
+circle I; 0.05; 0; -2Pi; 40;
+Loop
+circle -1; 0.05; 0; -2Pi; 40;
+Loop
+circle -I; 0.05; 0; -2Pi; 40;
+Hole
+point 1; I; -1; -I
+
+max_area 0
+min_angle 28
+smooth 10
+refine 0
+max_area2 0
+curvature_exp 0
+curvature_cut 0
+
+zstart 0
+integrator_count 1
+initial_integrator_count 100
+associate 0
+varname z

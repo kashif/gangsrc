@@ -1,0 +1,22 @@
+BubbletonLab 1.0
+
+name Double bubbleton
+center 0
+
+size 3
+
+normalshift 1
+domain triangulated
+boundary
+Loop
+line -5; 5; 40
+line 5; 5 + Pi I; 10
+line 5 + Pi I; -5 + Pi I; 40
+line -5 + Pi I; -5; 10
+max_area 0
+min_angle 0
+smooth 0
+min_angle 29
+max_area 0.1
+max_area2 0.1
+refine 2

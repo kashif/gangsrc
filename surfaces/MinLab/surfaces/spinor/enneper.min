@@ -1,0 +1,12 @@
+MinLab 1.0
+
+name Enneper's Minimal Surface
+
+mode spinor
+spinor1 z
+spinor2 1
+
+zstart 0
+
+domain
+polar 0; 0; 3; 20; 0; 2 Pi; 100

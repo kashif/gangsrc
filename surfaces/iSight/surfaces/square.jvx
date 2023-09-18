@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<jvx-model>
+	<meta generator="GANGLab Software v020222"/>
+	<meta date="Sat Feb 23 21:39:35 UTC 2002"/>
+	<version type="dump">0.10</version>
+	<title>surface</title>
+	<geometries>
+		<geometry name="surface">
+			<pointSet dim="3" point="hide">
+				<points num="4">
+					<p> 0.000000000000000e+00  0.000000000000000e+00  0.000000000000000e+00</p>
+					<p> 1.000000000000000e+00  0.000000000000000e+00  0.000000000000000e+00</p>
+					<p> 1.000000000000000e+00  1.000000000000000e+00  0.000000000000000e+00</p>
+					<p> 0.000000000000000e+00  1.000000000000000e+00  0.000000000000000e+00</p>
+				</points>
+			</pointSet>
+			<faceSet face="show" edge="show">
+				<faces num="1">
+					<f>0 1 2 3</f>
+				</faces>
+			</faceSet>
+		</geometry>
+	</geometries>
+</jvx-model>

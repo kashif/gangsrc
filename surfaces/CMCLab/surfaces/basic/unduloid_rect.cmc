@@ -1,0 +1,12 @@
+CMCLab 1.0
+
+name Delaunay Unduoid
+potential
+{{
+  0,
+  0.4/t + 0.1 },{
+  0.1 + 0.4 t,
+  0
+}}
+domain rectangular -18; 18; 100; -18+2pi i; 20
+zstart 0

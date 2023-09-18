@@ -1,0 +1,12 @@
+SurfLab 1.0
+
+name Catenoid
+
+domain rectangular 1; 3; 20; 1+2pi i; 40;
+
+x1 u cos[v]
+x2 u sin[v]
+x3 acosh[u]
+
+var1 u
+var2 v

@@ -1,0 +1,25 @@
+CMCLab 1.0
+
+name Minimal Klein Bottle in S^3
+potential {{
+  0,
+  0.4/t + 0.2 },{
+  0.2 + 0.4 t,
+  0
+}}
+
+domain rectangular 0; 10.7825; 60; 7.854i; 40;
+potential_variable z
+zstart 0
+lambda S3 0.5; 0
+normalshift 1
+mean_curvature 1
+polynomial_length 10
+basis_length 20
+iwasawa_method qr
+birkhoff false
+one_column true
+initial_integrator_count 100
+integrator_count 1
+xstart {{-1+2i,-1-2i},{1-2i,-1-2i}}
+

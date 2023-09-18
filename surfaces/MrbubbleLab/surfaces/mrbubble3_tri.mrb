@@ -1,0 +1,18 @@
+MrBubbleLab 1.0
+
+name 3-legged Mr Bubble
+domain triangulated
+boundary
+Loop
+circle 0; 2; 0; 2Pi; 40
+min_angle 30
+max_area 0.05
+smooth 0
+max_area2 0
+refine 0
+
+u0 1
+uprime0 0
+coefficient 1
+exponent 1
+integrator_count 10

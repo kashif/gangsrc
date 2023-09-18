@@ -1,0 +1,12 @@
+CMCLab 1.0
+
+name Round Sphere
+potential
+{{
+  0,
+  1/t },{
+  0,
+  0
+}}
+domain rectangular -4-4i; 4-4i; 40; -4+4i; 40
+zstart  0

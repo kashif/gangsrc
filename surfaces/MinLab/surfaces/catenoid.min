@@ -1,0 +1,12 @@
+MinLab 1.0
+
+name Catenoid
+
+mode weierstrass
+weierstrass_g 1/z
+weierstrass_f 1
+
+zstart 1
+
+domain
+polar_exp 0; 8; 1/8; 30; 0; 2 Pi; 50

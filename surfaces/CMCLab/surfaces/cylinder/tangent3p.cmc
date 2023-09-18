@@ -1,0 +1,16 @@
+CMCLab 1.0
+
+name Cylinder Tangent to Plane
+zstart 1
+domain polar 0; 1; 0.45; 20; 0; 2pi; 120
+integrator_count 1
+initial_integrator_count 100
+polynomial_length 30
+basis_length 60
+potential
+{{
+  0,
+  (-i(1/z + 1/z^4)/z)/t + (i(1/z + 1/z^4)/z) },{
+  (-i(z + z^4)/z) + (i(z + z^4)/z) t,
+  0
+}}

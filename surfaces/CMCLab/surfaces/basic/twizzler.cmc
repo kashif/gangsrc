@@ -1,0 +1,13 @@
+CMCLab 1.0
+
+name Twizzler
+potential
+{{
+  0,
+  0.1/t + 0.4 },{
+  0.4 + 0.1 t,
+  0
+}}
+zstart 0
+domain rectangular -16; 16; 161; -16+10.33269823765683 i; 51
+lambda R3 0.2588181923818541

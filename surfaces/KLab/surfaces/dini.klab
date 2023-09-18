@@ -1,0 +1,20 @@
+KLab 1.0
+
+name Dini's Surface
+
+potential_x {{0.35355i, 0.25/t + 0.25i t}, {-0.25/t + 0.25i t, -0.35355i}}
+
+potential_y {{0.35355i, 0.25/t + 0.25i t}, {-0.25/t + 0.25i t, -0.35355i}}
+
+domain rectangular -8-10i; 8-10i; 40; -8+10i; 30;
+
+zstart 0
+lambda 1.2
+polynomial_length 20
+
+initial_x {{1,0},{0,1}}
+
+initial_y {{1,0},{0,1}}
+
+initial_integrator_count 100
+integrator_count 1

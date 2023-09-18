@@ -1,0 +1,13 @@
+SurfLab 1.0
+
+geometry elliptic
+dim 3
+name 
+var1 u
+var2 v
+x1 Cos[u]Cos[v]
+x2 Cos[u]Sin[v]
+x3 Sin[u]Cos[v]
+x4 Sin[u]Sin[v]
+x5 
+domain rectangular 0; Pi; 20; 2Pi I; 41

@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Set $BIN to the directory containing the mrbubblelab-gtk binary
+BIN=/usr/local/bin
+
+# Set $LIB to the directory containing the gang c libraries
+LIB=/usr/local/lib
+
+# Set MRBUBBLELAB_DOC to the URL containing MrBubbleLab documentation
+MRBUBBLELAB_DOC=http://www.gang.umass.edu/software/mrbubblelab/
+
+# Set MRBUBBLELAB_LIB to a directory containing the library of MrBubbleLab surface files.
+MRBUBBLELAB_LIB=/usr/local/lib/MrBubbleLab/surfaces
+
+# Set ISIGHT_LIB to a directory containing the library of iSight surface files.
+ISIGHT_LIB=/usr/local/lib/iSight/examples
+
+# ------------------------------------
+
+export MRBUBBLELAB_LIB MRBUBBLELAB_DOC
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$LIB
+
+CMD=mrbubblelab-gtk
+
+case "$1" in
+  -c)
+    CMD=mrbubblelab-cmd
+    shift
+    ;;
+esac
+
+CMD=$BIN/$CMD
+
+exec $CMD $@

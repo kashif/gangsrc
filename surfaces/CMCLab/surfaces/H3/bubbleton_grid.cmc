@@ -1,0 +1,36 @@
+CMCLab 1.0
+
+name Bubbleton in H^3
+
+# unduloid, end wraps once
+# lambda0 is root of mu[lambda0]=1/2
+# alpha is root of mu[lambda0]=1
+# is this a cylinder?
+
+potential
+{{
+  0,
+  1/6/t+1/6 },{
+  1/6+1/6t,
+  0
+}}
+zstart 0
+domain rectangular 0; 4; 40; 2 pi i; 40
+
+lambda H3 (7-3 Sqrt[5])/2
+
+polynomial_length 10
+basis_length      20
+birkhoff true
+one_column false
+
+xstart
+{{
+t-(17-12Sqrt[2])
+,
+0
+},{
+0
+,
+(17-12Sqrt[2])t - 1
+}}

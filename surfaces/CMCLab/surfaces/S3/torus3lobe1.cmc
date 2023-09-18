@@ -1,0 +1,25 @@
+CMCLab 1.0
+
+name Torus with 3 Lobes in S^3
+potential {{
+  0,
+  0.077/t + 0.442579 },{
+  0.442579 + 0.077 t,
+  0
+}}
+
+domain rectangular -10.7112; 10.7112; 100; -10.7112+2pi i; 30;
+potential_variable z
+zstart 0
+lambda S3 0.125; -0.125
+normalshift 1
+mean_curvature 1
+polynomial_length 10
+basis_length 20
+iwasawa_method qr
+birkhoff false
+one_column true
+initial_integrator_count 100
+integrator_count 1
+xstart {{1,0},{0,1}}
+

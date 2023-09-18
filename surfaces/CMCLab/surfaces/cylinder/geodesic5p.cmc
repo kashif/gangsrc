@@ -1,0 +1,16 @@
+CMCLab 1.0
+
+name Cylinder with Planar Geodesic
+zstart 1
+domain polar_exp 0; 1; 2.25; 30; 0; 2pi; 200
+integrator_count 1
+initial_integrator_count 100
+polynomial_length 20
+basis_length 40
+potential
+{{
+  0,
+  (0.5/z)/t + (0.2(z^5+z^-5)/z) },{
+  (0.2(z^5+z^-5)/z) + (0.5/z) t,
+  0
+}}

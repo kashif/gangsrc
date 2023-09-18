@@ -1,0 +1,29 @@
+CMCLab 1.0
+
+name Smyth Surface with Bubbleton
+
+potential
+{{
+  0,
+  1/t },{
+  0.8 z,
+  0
+}}
+
+
+zstart 0
+domain polar 0; 0; 2.5; 40; 0; 2pi; 200
+
+birkhoff true
+one_column false
+
+xstart
+{{
+1 - 4t
+,
+0
+},{
+0
+,
+-4 + t
+}}

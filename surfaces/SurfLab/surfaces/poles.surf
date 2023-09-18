@@ -1,0 +1,32 @@
+SurfLab 1.0
+
+dim 3
+name re[1/(z^2-1)]
+var1 u
+var2 v
+x1 u
+
+x2 v
+
+x3 re[1/((u+I v)^2-1)]
+
+x4 
+domain triangulated
+boundary
+Loop
+circle 0; 3; 0; 2Pi; 40
+Loop
+circle 1; 0.1; 0; -2Pi; 40
+Loop
+circle -1; 0.1; 0; -2Pi; 40
+Hole
+point 1
+point -1
+
+max_area 0.2
+min_angle 29
+smooth 0
+refine 0
+max_area2 0
+curvature_exp 0
+curvature_cut 0

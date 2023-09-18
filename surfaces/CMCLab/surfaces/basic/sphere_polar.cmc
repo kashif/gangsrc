@@ -1,0 +1,12 @@
+CMCLab 1.0
+
+name Round Sphere
+potential
+{{
+  0,
+  1/t },{
+  0,
+  0
+}}
+domain polar_exp 0; 0.1; 10; 30; 0; 2 pi; 40
+zstart 0

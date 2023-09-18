@@ -1,0 +1,12 @@
+SurfLab 1.0
+
+name Paraboloid
+
+domain polar 0; 0; 2; 20; 0; 2pi; 30;
+
+x1 u
+x2 v
+x3 u^2+v^2
+
+var1 u
+var2 v

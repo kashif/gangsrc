@@ -1,0 +1,12 @@
+CMCLab 1.0
+
+name Round Cylinder
+potential
+{{
+  0,
+  0.25/z/t },{
+  0.25/z,
+  0
+}}
+domain polar_exp 0; 1000; 0.001; 20; 0; 2pi; 30
+zstart 1

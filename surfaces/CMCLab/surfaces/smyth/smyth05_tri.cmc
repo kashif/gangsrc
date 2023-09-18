@@ -1,0 +1,36 @@
+CMCLab 1.0
+
+name Smyth Surface with 5 Legs
+potential {{
+  0,
+  1/t },{
+  0.2 z^3,
+  0
+}}
+
+domain triangulated
+boundary
+Loop
+  circle 0; 2.085464; 0; 2Pi; 140
+
+max_area 0.1
+min_angle 30
+smooth 10
+refine 0
+max_area2 0.1
+curvature_exp 1
+curvature_cut 1
+
+potential_variable z
+zstart 0
+lambda R3 0
+normalshift 1
+mean_curvature 1
+polynomial_length 10
+basis_length 20
+iwasawa_method qr
+birkhoff false
+one_column false
+initial_integrator_count 100
+integrator_count 1
+xstart {{1,0},{0,1}}

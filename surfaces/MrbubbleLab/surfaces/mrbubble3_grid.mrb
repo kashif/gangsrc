@@ -1,0 +1,9 @@
+MrBubbleLab 1.0
+
+name 3-Legged Mr Bubble
+domain polar 0; 0; 2; 20; 0; 2pi; 60;
+u0 1
+uprime0 0
+coefficient 1
+exponent 1
+integrator_count 10

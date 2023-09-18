@@ -1,0 +1,12 @@
+SurfLab 1.0
+
+name Sphere
+
+domain rectangular -pi/2; pi/2; 20; -pi/2+2pi i; 40;
+
+x1 cos[u]cos[v]
+x2 cos[u]sin[v]
+x3 sin[u]
+
+var1 u
+var2 v

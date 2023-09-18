@@ -1,0 +1,9 @@
+BubbletonLab 1.0
+
+name Surface
+center 0
+
+size 3
+
+normalshift 1
+domain rectangular -5; 5; 100; -5+pi i; 40;

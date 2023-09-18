@@ -1,0 +1,12 @@
+SurfLab 1.0
+
+name Ellipsoid
+
+domain rectangular -pi/2; pi/2; 20; -pi/2+2pi i; 40;
+
+x1 0.8cos[u]cos[v]
+x2 1.5cos[u]sin[v]
+x3 sin[u]
+
+var1 u
+var2 v

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set $BIN to a directory containing the isight-gtk binary.
+BIN=/usr/local/bin
+
+# Set ISIGHT_LIB to a directory containing a library of isight surface files.
+ISIGHT_LIB=/usr/local/lib/iSight/examples
+
+# Set ISIGHT_DOC to the URL containing isight documentation
+ISIGHT_DOC=http://www.gang.umass.edu/software/isight/
+
+# ------------------------------------
+
+export ISIGHT_LIB ISIGHT_DOC
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+exec $BIN/isight-gtk $@

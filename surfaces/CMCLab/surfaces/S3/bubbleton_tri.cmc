@@ -1,0 +1,39 @@
+CMCLab 1.0
+
+name Bubbleton in S^3
+potential {{
+  0,
+  1/3/t + 1/3 },{
+  1/3 + 1/3 t,
+  0
+}}
+
+domain triangulated
+boundary
+Loop
+line -3.25; 5; 20
+line 5; 5 + 2Pi I; 8
+line 5 + 2Pi I; -3.25 + 2Pi I; 20
+line -3.25 + 2Pi; -3.25; 8
+
+max_area 0
+min_angle 30
+smooth 0
+refine 4
+max_area2 0.5
+curvature_exp 1
+curvature_cut 1
+
+potential_variable z
+zstart 1
+lambda S3 atan[3Sqrt[7]]/(2Pi); -atan[3Sqrt[7]]/(2Pi)
+normalshift 1
+mean_curvature 1
+polynomial_length 10
+basis_length 20
+iwasawa_method qr
+birkhoff true
+one_column false
+initial_integrator_count 100
+integrator_count 10
+xstart {{t-(7+3Sqrt[5])/2, 0},{0, (7+3Sqrt[5])/2 t-1}}

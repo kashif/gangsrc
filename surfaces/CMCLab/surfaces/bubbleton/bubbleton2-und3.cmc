@@ -1,0 +1,47 @@
+CMCLab 1.0
+
+name 2-Lobed Unduloid Bubbleton
+
+# 2-lobed bubbleton with unduloid ends
+# the bubbleton is situated between a neck and bulge of the unduloid
+
+potential
+{{
+  0,
+  0.4/t + 0.1 },{
+  0.1 + 0.4 t,
+  0
+}}
+
+domain triangulated
+boundary
+Loop
+  line (-8)+(-Pi)I; (8)+(-Pi)I; 20
+  line (8)+(-Pi)I; (8)+(Pi)I; 20
+  line (8)+(Pi)I; (-8)+(Pi)I; 20
+  line (-8)+(Pi)I; (-8)+(-Pi)I; 20
+
+
+max_area 0.05
+min_angle 30
+smooth 0
+refine 2
+max_area2 0.05
+curvature_exp 1
+curvature_cut 1
+
+zstart 0
+lambda R3 0
+normalshift 1
+polynomial_length 10
+basis_length 10
+birkhoff true
+initial_integrator_count 100
+integrator_count 10
+xstart
+{{
+  0.006799887439056462 - 19.708494663600497*t,
+  4.53516033132851 - 4.535160331328509*t},{
+  4.53516033132851 - 4.53516033132851*t,
+  -19.708494663600497 + 0.006799887439056573*t
+}}

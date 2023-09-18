@@ -1,0 +1,12 @@
+MinLab 1.0
+
+name Minimal Moebius Strip
+
+mode spinor
+spinor1 i(z+1)/z^2
+spinor2 z-1
+
+zstart 1
+
+domain
+polar_exp 0; 2/3; 3/2; 30; 0; pi; 100
